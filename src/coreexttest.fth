@@ -11,7 +11,8 @@
 \ The tests are not claimed to be comprehensive or correct 
 
 \ ------------------------------------------------------------------------------
-\ Version 0.14 21 July 2022 Updated first line of BUFFER: test as recommended
+\ Version 0.15 1 August 2025 Added two tests to VALUE
+\         0.14 21 July 2022 Updated first line of BUFFER: test as recommended
 \              in issue 32
 \         0.13 28 October 2015
 \              Replace <FALSE> and <TRUE> with FALSE and TRUE to avoid
@@ -419,6 +420,8 @@ T{ VAL2 -> -999 }T
 T{ -333 VD2 -> }T
 T{ VAL2 -> -333 }T
 T{ VAL1 -> 222 }T
+T{ 444 TO VAL1 -> }T
+T{ VD1 -> 444 }T
 T{ 123 VALUE VAL3 IMMEDIATE VAL3 -> 123 }T
 T{ : VD3 VAL3 LITERAL ; VD3 -> 123 }T
 
